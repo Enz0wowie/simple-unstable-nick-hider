@@ -1,5 +1,7 @@
 package net.enzo.unstablenickhider;
 
+import net.enzo.unstablenickhider.util.RemoteUsernameFetcher;
+
 import java.util.List;
 
 /**
@@ -24,6 +26,18 @@ public final class UnstableNicknames {
             "RED",
             "BLUE"
     );
+
+    /**
+     * The nickname pool to use: the remote list (fetched from the Vercel API)
+     * when available, otherwise the hardcoded list below.
+     */
+    public static List<String> getPool() {
+        List<String> remote = RemoteUsernameFetcher.getRemoteNames();
+        if (remote != null && !remote.isEmpty()) {
+            return remote;
+        }
+        return NAMES;
+    }
 
     /** Predetermined nickname pool for "Random Unstable Events Nickname" mode. */
     public static final List<String> NAMES = List.of(

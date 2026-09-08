@@ -12,6 +12,7 @@ import dev.isxander.yacl3.config.v2.api.serializer.GsonConfigSerializerBuilder;
 import dev.isxander.yacl3.platform.YACLPlatform;
 import net.enzo.unstablenickhider.UnstableNicknames;
 import net.enzo.unstablenickhider.util.OtherPlayerRender;
+import net.enzo.unstablenickhider.util.RemoteUsernameFetcher;
 import net.enzo.unstablenickhider.util.SkinSpoofer;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.text.Text;
@@ -29,6 +30,7 @@ public class UnstableNickHiderConfig {
 
     @SerialEntry public boolean enabled = false;
     @SerialEntry public boolean useRandomNickList = false;
+    @SerialEntry public boolean offlineRandomNicknames = true;
     @SerialEntry public String serverNickname = "";
     @SerialEntry public boolean automaticSkin = true;
     @SerialEntry public boolean hideSkin = false;
@@ -44,6 +46,7 @@ public class UnstableNickHiderConfig {
     private static String cachedRandomNick = null;
 
     public static void load() {
+        RemoteUsernameFetcher.fetchAsync();
         HANDLER.load();
         refreshRandomNick();
     }
@@ -53,11 +56,17 @@ public class UnstableNickHiderConfig {
     }
 
     /**
-     * Picks a new random nick from the predetermined list (UnstableNicknames.NAMES)
-     * and refreshes the skin. Called on startup and on every save.
+     * Picks a new random nick from the nickname pool and refreshes the skin.
+     * Pool selection: the built-in hardcoded list when offline mode is on
+     * (default), otherwise the remote Vercel API list (falls back to the
+     * built-in list when the API is unreachable or empty). Called on startup
+     * and on every save.
      */
     public static void refreshRandomNick() {
-        List<String> names = UnstableNicknames.NAMES;
+        UnstableNickHiderConfig cfg = HANDLER.instance();
+        List<String> names = cfg.offlineRandomNicknames
+                ? UnstableNicknames.NAMES
+                : UnstableNicknames.getPool();
         if (names == null || names.isEmpty()) {
             cachedRandomNick = "FallbackNick";
         } else {
@@ -66,7 +75,6 @@ public class UnstableNickHiderConfig {
 
         // Only fetch the nickname's skin when Automatic Skin is actually in use
         // (Hide Skin overrides it and needs no network requests at all).
-        UnstableNickHiderConfig cfg = HANDLER.instance();
         if (cfg.enabled && !cfg.hideSkin && cfg.automaticSkin) {
             String activeNick = cfg.getActiveNickname();
             if (!activeNick.isEmpty()) {
@@ -116,6 +124,15 @@ public class UnstableNickHiderConfig {
                                 .description(OptionDescription.of(Text.translatable("config.unstablenickhider.option.random_mode.desc")))
                                 .binding(defaults.useRandomNickList, () -> config.useRandomNickList, newVal -> {
                                     config.useRandomNickList = newVal;
+                                    refreshRandomNick();
+                                })
+                                .controller(TickBoxControllerBuilder::create)
+                                .build())
+                        .option(Option.<Boolean>createBuilder()
+                                .name(Text.translatable("config.unstablenickhider.option.offline_random"))
+                                .description(OptionDescription.of(Text.translatable("config.unstablenickhider.option.offline_random.desc")))
+                                .binding(defaults.offlineRandomNicknames, () -> config.offlineRandomNicknames, newVal -> {
+                                    config.offlineRandomNicknames = newVal;
                                     refreshRandomNick();
                                 })
                                 .controller(TickBoxControllerBuilder::create)
