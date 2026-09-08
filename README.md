@@ -19,4 +19,4 @@
 > This is a project made using **vibe-coding.**
 
 > [!CAUTION]
-> Use this mod at You're own risk, Server bans, Moderation actions, or actions from third parties is always possible and will not make you immune to consequences
+> Use this mod at **you're own risk**, Server bans, Moderation actions, or actions from third parties is **always possible** and will not make you immune to consequences
