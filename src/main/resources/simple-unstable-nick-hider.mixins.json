@@ -1,0 +1,19 @@
+{
+	"required": true,
+	"package": "net.enzo.unstablenickhider.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"TextVisitFactoryMixin"
+	],
+	"client": [
+		"AbstractClientPlayerEntityMixin",
+		"EntityRenderManagerMixin",
+		"PlayerEntityMixin",
+		"PlayerEntityRendererMixin",
+		"PlayerListEntryMixin",
+		"PlayerListHudMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

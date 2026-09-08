@@ -1,0 +1,43 @@
+{
+  "config.unstablenickhider.title": "Simple Unstable Nick Hider",
+  "config.unstablenickhider.category.settings": "Settings",
+
+  "config.unstablenickhider.option.enable": "Enable Mod",
+  "config.unstablenickhider.option.enable.desc": "Turns the nick hider on or off.",
+
+  "config.unstablenickhider.option.random_mode": "Random Unstable Events Nickname",
+  "config.unstablenickhider.option.random_mode.desc": "Picks a random nickname from the predetermined Unstable Events player list (defined in the mod itself).",
+
+  "config.unstablenickhider.option.server_nick": "Custom Server Nickname",
+  "config.unstablenickhider.option.server_nick.desc": "The specific nickname to show when random mode is off.",
+
+  "config.unstablenickhider.option.automatic_skin": "Automatic Skin",
+  "config.unstablenickhider.option.automatic_skin.desc": "Automatically changes your skin locally to match your current nickname. If the nickname is not a real player, you get a Default skin.",
+
+  "config.unstablenickhider.option.hide_skin": "Hide Skin",
+  "config.unstablenickhider.option.hide_skin.desc": "Always shows a default skin instead of yours. Overrides Automatic Skin.",
+
+  "config.unstablenickhider.option.disable_nametags": "Disable Render Player Nametags",
+  "config.unstablenickhider.option.disable_nametags.desc": "Disables ALL rendering of player nametags. Players on the Render Whitelist are not affected.",
+
+  "config.unstablenickhider.option.disable_players": "Disable Render Players",
+  "config.unstablenickhider.option.disable_players.desc": "Disables ALL rendering of players (body, nametag, everything). Players on the Render Whitelist are not affected.",
+
+  "config.unstablenickhider.option.render_whitelist": "Render Whitelist",
+  "config.unstablenickhider.option.render_whitelist.desc": "Comma-separated list of real player usernames that are NOT affected by the render settings above. Example: Wemmbu, FlameFrags",
+
+  "config.unstablenickhider.option.ranks_whitelist": "Render Ranks Whitelist",
+  "config.unstablenickhider.option.ranks_whitelist.desc": "Comma-separated list of ranks (e.g. LuckPerms groups). Players with these ranks are NOT affected by the render settings. Matching is case-insensitive and ignores colours, bold and italic styling. Example: OP, Assistant, Trusted",
+
+  "config.unstablenickhider.option.teams_whitelist": "Render Teams Whitelist",
+  "config.unstablenickhider.option.teams_whitelist.desc": "Comma-separated list of scoreboard team names. Players on these teams are NOT affected by the render settings. Matching is case-insensitive. Example: RED, BLUE",
+
+  "config.unstablenickhider.option.other_random_skins": "Other Players Randomized Skins",
+  "config.unstablenickhider.option.other_random_skins.desc": "Gives every player a default skin. Whitelisted players keep their real skin.",
+
+  "config.unstablenickhider.option.other_random_angle": "Other Players Random Angle",
+  "config.unstablenickhider.option.other_random_angle.desc": "Locks every player's head to a random look direction that stays fixed even while they move. Whitelisted players are not affected.",
+
+  "config.unstablenickhider.option.hide_from_tab": "Hide From Tab",
+  "config.unstablenickhider.option.hide_from_tab.desc": "Locally hides you from the player tab list, even while nicked, Only you see this change."
+}
