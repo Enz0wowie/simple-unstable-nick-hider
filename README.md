@@ -20,3 +20,18 @@
 
 > [!CAUTION]
 > Use this mod at **you're own risk**, Server bans, Moderation actions, or actions from third parties is **always possible** and will not make you immune to consequences
+
+## Features
+- **Enable Mod** - Enables/Disables the Entire mod. If toggled off the settings below will not work.
+- **Random Unstable Events Nickname** - Uses Real Player usernames from Unstable Events.
+- **Custom Server Nickname** - Change you're nickname to anything.
+- **Automatic Skin** - Automatically set's your skin to the nickname you currently have. If the nickname Isn't a valid player it will default to a default skin.
+- **Hide Skin** - Hide's your skin completely, to a default skin this overrides automatic skin.
+- **Disable Render Player Nametags** - Strips Nametag's From Players. Whitelisted Players are not affected by this.
+- **Disable Render Players** - Completely Disables All Rendering of a Player. Body, Nametag, Everything about them. Whitelisted Players are not affected by this.
+- **Render Whitelist** - Uses Comma-Seperated list. Players In this list will not be affected by render settings.
+- **Render Ranks Whitelist** - Uses Comma-Seperated list. Ranks In this list will not be affected by render settings. Case-Insensitive
+- **Render Teams Whitelist** - Uses Comma-Seperated list. Scoreboard Teams In this list will not be affected by render settings. Case-Insensitive
+- **Other Players Randomized Skins** - Gives Every player a default skin. Whitelist's are not affected.
+- **Other Players Random Angle** - Gives Every player a random look direction that's stays fixed even moving. Whitelist's are not affected.
+- **Hide From Tab** - Hides you completely from the Tab List. even if you are nicked. Only you can see this.
