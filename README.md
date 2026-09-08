@@ -1,7 +1,7 @@
 <h1 align="center">Simple Unstable Nick Hider</h1>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/17d43090-0996-4860-8d4f-d4604114c00c" width="300" alt="Simple Unstable Nick Hider Logo">
+  <img src="https://github.com/user-attachments/assets/17d43090-0996-4860-8d4f-d4604114c00c" width="128" alt="Simple Unstable Nick Hider Logo">
 </p>
 
 <p align="center">
