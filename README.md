@@ -17,13 +17,13 @@
 </p>
 
 > [!NOTE]
-> This mod is a fully client-sided and visual. other player's will not be able to see what changes you make no matter what.
+> This mod is a fully client-sided and visual. other player's will not be able to see what changes you make no matter what. Servers **may be able** to detect this mod being installed.
 
 > [!WARNING]
 > This is a project made using **vibe-coding.**
 
 > [!CAUTION]
-> Use this mod at **you're own risk**, Server bans, Moderation actions, or actions from third parties is **always possible** and will not make you immune to consequences
+> Use this mod at **you're own risk**, Server bans, Moderation actions, or actions from third parties is **always possible** and does not exempt you to consequences
 
 ## Features
 - **Enable Mod** - Enables/Disables the Entire mod. If toggled off the settings below will not work.
