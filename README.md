@@ -26,6 +26,7 @@
 > [!WARNING]
 > Random Unstable Events Nickname **does not automatically** scrape, collect player usernames using a bot, a script or anything automated it is all handpicked.
 > for any users in the list wanting to opt-out of the collected usernames please email **enzosbusiness15261@gmail.com** with sufficent proof that you own the said account and not just a screenshot of you in the game with a username.
+> you will then be taken out of the username list, older versions may have your username still stuck in them but further versions will no longer keep them.
 
 
 > [!CAUTION]
