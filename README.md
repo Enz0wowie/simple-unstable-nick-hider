@@ -25,9 +25,10 @@
 > [!CAUTION]
 > Use this mod at **you're own risk**, Server bans, Moderation actions, or actions from third parties is **always possible** and does not exempt you to consequences
 
+
 ## Features
 - **Enable Mod** - Enables/Disables the Entire mod. If toggled off the settings below will not work.
-- **Random Unstable Events Nickname** - Uses Real Player usernames from Unstable Events.
+- **Random Unstable Events Nickname** - Randomly selects a nickname from a locally configured list of Unstable Events player usernames.
 - **Custom Server Nickname** - Change you're nickname to anything.
 - **Automatic Skin** - Automatically set's your skin to the nickname you currently have. If the nickname Isn't a valid player it will default to a default skin.
 - **Hide Skin** - Hide's your skin completely, to a default skin this overrides automatic skin.
