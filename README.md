@@ -21,6 +21,8 @@
 
 > [!WARNING]
 > This is a project made using **vibe-coding.**
+> This mod is not affiliated with, endorsed by, or offically supported by Unstable Events, its creators, or its operators.
+
 
 > [!CAUTION]
 > Use this mod at **you're own risk**, Server bans, Moderation actions, or actions from third parties is **always possible** and does not exempt you to consequences
