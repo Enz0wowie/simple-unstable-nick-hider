@@ -39,3 +39,4 @@
 - **Other Players Randomized Skins** - Gives Every player a default skin. Whitelist's are not affected.
 - **Other Players Random Angle** - Gives Every player a random look direction that's stays fixed even moving. Whitelist's are not affected.
 - **Hide From Tab** - Hides you completely from the Tab List. even if you are nicked. Only you can see this.
+- **Switch Unstable Events Nickname** - Under Misc In your keybind settings, this is unbounded. but this allows you to swap your unstable events nickname to a different one.
