@@ -23,6 +23,10 @@
 > This is a project made using **vibe-coding.**
 > This mod is **not affiliated with, endorsed by, or offically supported** by Unstable Events, its creators, or its operators.
 
+> [!WARNING]
+> Random Unstable Events Nickname **does not automatically** scrape, collect player usernames using a bot, a script or anything automated it is all handpicked.
+> for any users in the list wanting to opt-out of the collected usernames please email **enzosbusiness15261@gmail.com** with sufficent proof that you own the said account and not just a screenshot of you in the game with a username.
+
 
 > [!CAUTION]
 > Use this mod at **you're own risk**, Server bans, Moderation actions, or actions from third parties is **always possible** and does not exempt you to consequences
