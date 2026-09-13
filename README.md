@@ -18,6 +18,7 @@
 
 > [!NOTE]
 > This mod is a fully client-sided and visual. other player's will not be able to see what changes you make no matter what. Servers **may be able** to detect this mod being installed.
+> This Mod Is Also Inspired off Simple Nick Hider so if you want a alternative that isn’t vibe-coded head on over to them on modrinth.
 
 > [!WARNING]
 > This is a project made using **vibe-coding.**
