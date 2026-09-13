@@ -8,8 +8,8 @@
 		"Enzo"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/Enz0wowie/simple-unstable-nick-hider/",
+		"issues": "https://github.com/Enz0wowie/simple-unstable-nick-hider/issues"
 	},
 	"license": "${license}",
 	"icon": "assets/simple-unstable-nick-hider/icon.png",

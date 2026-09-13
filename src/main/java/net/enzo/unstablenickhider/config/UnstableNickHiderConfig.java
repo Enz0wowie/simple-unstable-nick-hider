@@ -80,6 +80,10 @@ public class UnstableNickHiderConfig {
             if (!activeNick.isEmpty()) {
                 SkinSpoofer.clearCache();
                 SkinSpoofer.fetchSkin(activeNick);
+            } else {
+                // No nickname to spoof anymore (e.g. Random mode was just
+                // disabled and no custom nick is set) -- restore the real skin.
+                SkinSpoofer.clearCache();
             }
         }
     }

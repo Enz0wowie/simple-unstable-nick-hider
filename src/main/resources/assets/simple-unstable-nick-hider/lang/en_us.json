@@ -1,6 +1,12 @@
 {
+  "key.unstablenickhider.switch_nickname": "Switch Unstable Events Nickname",
+
   "config.unstablenickhider.title": "Simple Unstable Nick Hider",
   "config.unstablenickhider.category.settings": "Settings",
+
+  "config.unstablenickhider.notice.mod_disabled": "Simple Nick Hider is disabled -- enable it in the config first.",
+  "config.unstablenickhider.notice.random_disabled": "Enable 'Random Unstable Events Nickname' first before using this.",
+  "config.unstablenickhider.notice.switched": "Switched nickname to: %s",
 
   "config.unstablenickhider.option.enable": "Enable Mod",
   "config.unstablenickhider.option.enable.desc": "Turns the nick hider on or off.",
